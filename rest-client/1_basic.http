@@ -31,3 +31,8 @@ content-type: application/json
   "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
   "nonce": "{{nonce}}"
 }
+
+### 
+
+GET https://demo.jiniworld.me/api/v1/users/2 HTTP/1.1
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkZW1vQXBwIiwiaWF0IjoxNjQ1NzM2MDAyLCJleHAiOjE2NDU3Mzc3ODgsImFwaUtleSI6ImxmMk1jeVQzVjVnRHUycE5ObTRWeG1YM0MybWV6WDNzIn0.LMRZ6KnsRhUmipI3OqaC6HkJ6G7l8fZ5ZBzHFoWrEts

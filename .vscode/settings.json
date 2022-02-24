@@ -1,0 +1,9 @@
+{
+  "rest-client.previewResponseInUntitledDocument": true,
+  "rest-client.certificates": {
+      "demo.applebox.xyz": {
+          "pfx": "/Users/jini/jini_box/cert/applebox/applebox.p12",
+          "passphrase": "apple"
+      }
+  }
+}

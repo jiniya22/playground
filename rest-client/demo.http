@@ -1,0 +1,26 @@
+GET https://demo.jiniworld.me/test/mili HTTP/1.1
+
+###
+
+https://demo.jiniworld.me/test/mili
+
+###
+
+GET https://book.applebox.xyz/v1/notices
+    ?page=0
+    &size=3
+
+###
+
+@nonce = "1645733256810" 
+POST https://demo.jiniworld.me/token HTTP/1.1
+content-type: application/json
+
+{
+  "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
+  "nonce": {{nonce}}
+}
+
+###
+
+GET https://demo.applebox.xyz/test/mili

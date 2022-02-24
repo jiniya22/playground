@@ -6,9 +6,20 @@ https://demo.jiniworld.me/test/mili
 
 ###
 
-GET https://book.applebox.xyz/v1/notices
+GET https://book.applebox.xyz/v1/notices HTTP/1.1
     ?page=0
     &size=3
+
+###
+
+
+POST https://demo.jiniworld.me/token HTTP/1.1
+content-type: application/json
+
+{
+  "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
+  "nonce": "1645735988374"
+}
 
 ###
 
@@ -18,9 +29,5 @@ content-type: application/json
 
 {
   "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
-  "nonce": {{nonce}}
+  "nonce": "{{nonce}}"
 }
-
-###
-
-GET https://demo.applebox.xyz/test/mili

@@ -1,12 +1,12 @@
 # @name mili
-GET https://demo.applebox.xyz/test/mili HTTP/1.1
+GET https://demo.jiniworld.me/test/mili HTTP/1.1
 
 ###
 
 @nonce = {{mili.response.body.*}}
 # @name token
 POST https://demo.jiniworld.me/token HTTP/1.1
-content-type: application/json
+Content-Type: application/json
 
 {
   "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
@@ -19,3 +19,14 @@ content-type: application/json
 
 GET https://demo.jiniworld.me/api/v1/users/2 HTTP/1.1
 Authorization: Bearer {{authToken}}
+
+###
+
+PATCH https://demo.jiniworld.me/api/v1/users/2 HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer {{authToken}}
+
+{
+  "type": "1",
+  "birthDate": "950202"
+}

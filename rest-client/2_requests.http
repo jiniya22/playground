@@ -1,0 +1,49 @@
+# 2.1. Query Strings
+
+GET https://book.applebox.xyz/v1/notices HTTP/1.1
+
+###
+
+GET https://book.applebox.xyz/v1/notices
+?page=0
+&size=3
+
+
+###
+
+# 2.2. Request Headers
+
+GET https://demo.jiniworld.me/login HTTP/1.1
+Content-Type: text/html;charset=UTF-8
+
+###
+
+# 2.3. Request Body
+
+# 2.3.1. application/json
+
+// 1.2.의 mili 결과 값을 nonce에 넣으면 됩니다.
+POST https://demo.jiniworld.me/token HTTP/1.1
+content-type: application/json
+
+{
+    "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
+    "nonce": "1645757508741"
+}
+
+###
+
+POST https://demo.jiniworld.me/token HTTP/1.1
+content-type: application/json
+
+< ./body.json
+
+###
+
+# 2.3.2. application/x-www-form-urlencoded
+
+POST https://demo.jiniworld.me/login HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+
+email=rora@jiniworld.me
+&password=1

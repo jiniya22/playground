@@ -1,0 +1,20 @@
+GET https://demo.jiniworld.me/test/mili HTTP/1.1
+
+###
+
+@nonce = 1645766429108
+
+POST https://demo.jiniworld.me/token HTTP/1.1
+Content-Type: application/json
+
+{
+  "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
+  "nonce": {{nonce}}
+}
+
+### 
+
+@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkZW1vQXBwIiwiaWF0IjoxNjQ1NzY2NDMxLCJleHAiOjE2NDU3NjgyMjksImFwaUtleSI6ImxmMk1jeVQzVjVnRHUycE5ObTRWeG1YM0MybWV6WDNzIn0._d4xEvmLUCJUDdxhJ4i9kbC9LGpPRdFBJhc7RxyaJlY
+
+GET https://demo.jiniworld.me/api/v1/users/2 HTTP/1.1
+Authorization: Bearer {{token}}

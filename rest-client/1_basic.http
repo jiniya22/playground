@@ -1,3 +1,5 @@
+# 1.2. GET method 테스트
+
 GET https://demo.jiniworld.me/test/mili HTTP/1.1
 
 ###
@@ -5,36 +7,3 @@ GET https://demo.jiniworld.me/test/mili HTTP/1.1
 https://demo.jiniworld.me/test/mili
 
 ###
-
-GET https://book.applebox.xyz/v1/notices HTTP/1.1
-    ?page=0
-    &size=3
-
-###
-
-
-POST https://demo.jiniworld.me/token HTTP/1.1
-content-type: application/json
-
-{
-  "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
-  "nonce": "1645749769021"
-}
-
-###
-
-@nonce = 1645749769021
-POST https://demo.jiniworld.me/token HTTP/1.1
-content-type: application/json
-
-{
-  "apikey": "lf2McyT3V5gDu2pNNm4VxmX3C2mezX3s",
-  "nonce": {{nonce}}
-}
-
-### 
-
-@token = eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJkZW1vQXBwIiwiaWF0IjoxNjQ1NzQ5NzgxLCJleHAiOjE2NDU3NTE1NjksImFwaUtleSI6ImxmMk1jeVQzVjVnRHUycE5ObTRWeG1YM0MybWV6WDNzIn0.IYpe__6gmlMflc-MPkeAbYEXwclv_GNJevWgRBLeBuw
-
-GET https://demo.jiniworld.me/api/v1/users/2 HTTP/1.1
-Authorization: Bearer {{token}}
